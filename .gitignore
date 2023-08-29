@@ -25,3 +25,4 @@ yarn-error.log*
 #excludes some files
 main.scss
 Read.md
+.vercel
