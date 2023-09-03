@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { BsStar } from 'react-icons/bs';
 import PropTypes from 'prop-types';
 import { StarRating } from '../common';
-
 const GameItem = ({ gameItem }) => {
   return (
     <GameItemWrapper className='card'>

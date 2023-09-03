@@ -1,10 +1,11 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Home, Error, ViewGameAll, ViewGameDetails, ViewStoreAll, ViewStoreDetails, ViewCreatorAll } from '../views/index';
 import BaseLayout from "../layouts/BaseLayout";
-
+import Scroll from '../components/common/ScrollToTop'
 const AppRouter = () => {
   return (
     <BrowserRouter>
+    <Scroll>
       <Routes>
         <Route path = "/" element = { <BaseLayout /> }>
           <Route path = "/" element = { <Home /> } />
@@ -17,6 +18,7 @@ const AppRouter = () => {
           <Route path = "*" element = { <Error />} />
         </Route>
       </Routes>
+      </Scroll>
     </BrowserRouter>
   )
 }
