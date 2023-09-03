@@ -51,7 +51,7 @@ const Footer = () => {
 
       <div className='footer-bottom'>
         <div className='container d-flex flex-column text-center'>
-          <p className='footer-bottom-text text-green'>Copyright &copy; 2023 GeekProbin - All rights reserved.</p>
+          <p className='footer-bottom-text text-green'>Copyright &copy; 2023 GEstate - All rights reserved.</p>
           <ul className='footer-bottom-links d-flex justif-content-center'>
             <li><a href="#" className='text-white'>Home</a></li>
             <li><a href="#" className='text-white'>Help Center</a></li>

@@ -24,7 +24,7 @@ const Tabs = ({ data }) => {
       <div className='container'>
         <div className='tabs-content'>
           <ul className={`tabs-buttons ${tabButtonStatus ? "show" : ""}`}>
-            <button type="button" className='tabs-buttons-close bg-white d-flex align-items-center justify-content-center' onClick={ tabButtonsHandler }>
+            <button type="button" className='tabs-buttons-close posi bg-white d-flex align-items-center justify-content-center' onClick={ tabButtonsHandler }>
               <AiOutlineMenu size = { 22 } />
             </button>
             {
@@ -139,6 +139,15 @@ const TabsWrapper = styled.div`
   .tabs-body{
     max-width: 1050px;
     margin-left: auto;
+  }
+  @media screen and (max-width: 1136px)
+  {
+    .tabs-content{
+      padding-top: 50px;  
+    .posi{
+      right:-15px;
+    }
+    }
   }
 `;
 

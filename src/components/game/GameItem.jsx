@@ -17,13 +17,13 @@ const GameItem = ({ gameItem }) => {
         <h4 className='text-white text-uppercase card-title'>
           { gameItem?.name }
         </h4>
-        <div className='block-wrap d-flex align-items-end justify-content-between'>
+        <div className='block-change d-flex align-items-end justify-content-between'>
           <div className='details-group'>
             <div className='details-item d-flex align-items-center'>
               <p className='details-item-name fw-6'>Release Date: &nbsp;</p>
               <p className='details-item-value'>{ gameItem?.released } </p>
             </div>
-            <div className='details-item d-flex align-items-center'>
+            <div className='details-item details-style d-flex align-items-center'>
               <p className='details-item-name fw-6'>Updated: &nbsp;</p>
               <p className='details-item-value'>{ gameItem?.updated } </p>
             </div>
@@ -116,9 +116,16 @@ const GameItemWrapper = styled.div`
   @media screen and (max-width: 372px){
     .card-bottom{
     .card-button{
-      min-width:109.7px;
+      min-width:110px;
       height: 34px;
 
+    }
+    .block-change{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .details-style{
+      padding-bottom: 5px;
     }
     }
   }

@@ -108,6 +108,7 @@ const HomePage = () => {
             }}
           />
         </div>
+        <div className="posi">
         {genresStatus === STATUS.LOADING ? (
           <Preloader />
         ) : genres?.length > 0 ? (
@@ -115,6 +116,7 @@ const HomePage = () => {
         ) : (
           "No genres found!"
         )}
+        </div>
       </section>
 
       <section

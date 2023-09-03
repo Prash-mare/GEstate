@@ -22,7 +22,6 @@ const GenreItem = ({ gameItem }) => {
 
   return (
     <GenreItemWrapper className='card'>
-    <p>prash</p>
       <div className='card-top img-fit-cover'>
         <img src = { gameData?.background_image} alt = { gameData?.name} />
         <StarRating rating = { gameData?.rating} />
