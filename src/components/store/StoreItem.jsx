@@ -53,7 +53,7 @@ const StoreItemWrapper = styled.div`
   margin: 16px 0;
   .card-img{
     min-height: auto;
-    min-width: 145px;
+    min-width: 135px;
   }
   .card-text {
     padding: 16px;
@@ -87,10 +87,11 @@ const StoreItemWrapper = styled.div`
       li {
         background-color: #b9198e;
         border-radius: 100vh;
+        padding-top: 2px;
         padding-right: 8px;
         padding-left: 8px;
-        height: 23px;
-
+        height: auto;
+        text-align:center;
         * {
           font-weight: 500;
           color: var(--clr-violet-darker);
@@ -98,8 +99,9 @@ const StoreItemWrapper = styled.div`
 
         a {
           color: var(--clr-white);
-          font-size: 13px;
-          white-space: pre;
+          font-size: 11px;
+          text-align: left;
+          white-space: normal;
           display: inline-block;
           transform: translateY(-3px);
           font-style: italic;

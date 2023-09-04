@@ -28,5 +28,9 @@ const StoreListWrapper = styled.div`
             grid-template-columns: repeat(2, 1fr);
             column-gap: 32px;
         }
+        @media screen and (max-width: 373px)
+        {
+            font-size: 1.4rem;
+        }
     }
 `;
