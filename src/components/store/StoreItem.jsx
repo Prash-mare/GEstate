@@ -51,7 +51,10 @@ const StoreItemWrapper = styled.div`
   grid-template-columns: repeat(2, 1fr);
   min-height: 120px;
   margin: 16px 0;
-
+  .card-img{
+    min-height: auto;
+    min-width: 145px;
+  }
   .card-text {
     padding: 16px;
 
@@ -95,7 +98,7 @@ const StoreItemWrapper = styled.div`
 
         a {
           color: var(--clr-white);
-          font-size: 100%;
+          font-size: 13px;
           white-space: pre;
           display: inline-block;
           transform: translateY(-3px);
