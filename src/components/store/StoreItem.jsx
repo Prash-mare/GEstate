@@ -24,9 +24,11 @@ const StoreItem = ({ storeItem }) => {
             {storeItem?.games_count}
           </li>
         </ul>
-        {storeItem?.games && <p className="fw-7 text-white">Games:</p>}
+        {
+          storeItem?.games && <p className="fw-7 text-white">Games:</p>}
         <ul className="card-games d-flex flex-wrap">
-          {storeItem?.games?.map((item) => {
+          {
+            storeItem?.games?.map((item) => {
             return (
               <li className="card-game" key={item.id}>
                 <Link to={`games/${item.id}`}>{item.name}</Link>
@@ -93,7 +95,8 @@ const StoreItemWrapper = styled.div`
 
         a {
           color: var(--clr-white);
-          font-size: 13px;
+          font-size: 100%;
+          white-space: pre;
           display: inline-block;
           transform: translateY(-3px);
           font-style: italic;
