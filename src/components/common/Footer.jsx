@@ -1,7 +1,12 @@
 import { AiOutlineSend } from 'react-icons/ai';
 import styled from 'styled-components';
-
+import  toast from "react-hot-toast";
+import {Link} from 'react-router-dom';
 const Footer = () => {
+  const ToastMessage=(event)=>{
+    event.preventDefault();
+    toast.success("Email Received.");
+  }
   return (
     <FooterWrapper>
       <div className='footer-top'>
@@ -40,7 +45,7 @@ const Footer = () => {
             <form className='newsletter-form'>
               <div className='input-group d-flex align-items-stretch'>
                 <input type="text" className="input-group-field" placeholder = "Your email address" />
-                <button className='input-group-btn bg-white d-inline-flex align-items-center justify-content-center'>
+                <button onClick={ToastMessage} className='input-group-btn bg-white d-inline-flex align-items-center justify-content-center'>
                   <AiOutlineSend size = { 18 } />
                 </button>
               </div>
@@ -56,7 +61,7 @@ const Footer = () => {
             <li><a href="#" className='text-white'>Home</a></li>
             <li><a href="#" className='text-white'>Help Center</a></li>
             <li><a href="#" className='text-white'>Contact</a></li>
-            <li><a href="#" className='text-white'>Terms & conditions</a></li>
+            <li><Link to="/terms" className="text-white">Terms & Conditions</Link></li>
           </ul>
         </div>
       </div>
